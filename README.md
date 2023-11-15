@@ -1,10 +1,7 @@
-### Responsive Restaurant website using Html, Css and JavaScript.
-
-![Restaurant_website](https://github.com/codersgyan/Responsive-restaurant-website/blob/master/restaurant-webpage.jpg)
-
-
-#### Demo: https://codersgyan.github.io/Responsive-restaurant-website/
+# Responsive Food Shop website using Html, Css and JavaScript.
+This is a completely frontend project 
+It includes only for UI part of the project using Boostrap 5 for attractiveness..
+All the data in this project is completely static.
 
 
-🙏 If you find this repo helpful then don't forget to give a start ❇️  to this repository. :)
 
