@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alibaba Khana Khazaanaa</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS for gallery -->
+    <!-- /*<link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* styles.css */
+
+        .gallery-item {
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+            width: 95%;
+        }
+
+        .gallery-item img {
+            width: 95%;
+            height: auto;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 100%;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        .txt {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav-background">
+            <div class="mobile-logo">
+                <img src="./icons/logo.svg" alt="">
+            </div>
+            <div class="mobile-nav">
+                <div class="cart">
+                    <div class="flex items-center">
+                        <img src="./icons/cart-dark.svg" alt="">
+                        <a href="#">0 Items - ($0.00)</a>
+                    </div>
+                </div>
+                <div class="nav-top">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                       
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Log in</a>
+                        </li>
+                        <li>
+                            <a href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact flex items-center">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+91) 0123 456 789</h5>
+                        <h6>E-mail : alibaba@freshmeal.com</h6>
+                    </div>
+                </div>
+                <div class="time flex items-center">
+                    <img src="./icons/clock.svg" alt="">
+                    <div>
+                        <h5>Working Hours:</h5>
+                        <h6>24/7 (8.00am - 12.00am)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-content-wrapper">
+            <div class="nav-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" />
+                </svg>
+            </div>
+            <div class="site-content">
+                <header class="topbar">
+                    <div class="container flex justify-between items-center">
+                        <div class="icons">
+                            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="./icons/twitter.svg" alt=""></a>
+                            <a href="#"><img src="./icons/google.svg" alt=""></a>
+                            <a href="#"><img src="./icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="./icons/search.svg" alt=""></a>
+                        </div>
+                        <div class="auth flex items-center">
+                            <div>
+                                <img src="./icons/user-icon.svg" alt="">
+                                <a href="home.html">Log out</a>
+                            </div>
+
+                            <span class="divider">|</span>
+                            <div>
+                                <img src="./icons/cart.svg" alt="">
+                                <a href="#">0 Items - (Rs. 0.00)</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <nav>
+                    <div class="top">
+                        <div class="container flex justify-between">
+                            <div class="contact flex items-center">
+                                <img src="./icons/phone.svg" alt="">
+                                <div>
+                                    <h5>Call US: (+91) 0123 456 789</h5>
+                                    <h6>E-mail : alibaba@freshmeal.com</h6>
+                                </div>
+                            </div>
+                            <div class="branding">
+                                <img src="./icons/logo.svg" alt="">
+                            </div>
+                            <div class="time flex items-center">
+                                <img src="./icons/clock.svg" alt="">
+                                <div>
+                                    <h5>Working Hours:</h5>
+                                    <h6>24/7 (8.00am - 12.00am)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic-shadow">
+                        <div class="container flex justify-center">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About us</a>
+                            <a href="products.html">Products</a>
+                        
+                            <a href="shop.html">Shop</a>
+                            <a href="service.html">Services</a>
+                            <a href="#" class="active">Gallery</a>
+                           
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <h1 class="txt" style="color: darkorange;margin-bottom: 10px;margin-top: 5px;">Our Gallery</h1>
+
+                        <!-- Gallery items go here -->
+                        <!-- <div class="col-4"> -->
+
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/bouillabaisse france.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 1">
+                                <div class="overlay">
+                                    <div class="text">Bouillabaisse is synonymous with the South of France, especially the port city of Marseille, and is a wonderful celebration of sea creatures caught just off the coast.</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="https://imgs.search.brave.com/lc__t0VRB8K6dJaW4h_VxSqB8P4vdOZWvT5sqCfvPMc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2NjE2MDk2/Mjg5NTgtZTFmZGE1/M2E4N2ViP2l4bGli/PXJiLTQuMC4zJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4TVROOGZITmxZ/V1p2YjJSOFpXNThN/SHg4TUh4OGZEQT0m/dz0xMDAwJnE9ODA"
+                                    style="height: 250px; width: 100%;" alt="Image 2">
+                                <div class="overlay">
+                                    <div class="text">Prawn is a popular seafood known for its delicate flavor and
+                                        tender texture.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="https://imgs.search.brave.com/WJg0NmelVODBHBfDws6TwkpCfowWEWW1L1h_DtTgfKc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by90/b3Atdmlldy10YWJs/ZS1mdWxsLWRlbGlj/aW91cy1mb29kLWNv/bXBvc2l0aW9uXzIz/LTIxNDkxNDEzNTMu/anBnP3NpemU9NjI2/JmV4dD1qcGc"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">Tandoori chicken is a popular Indian dish known for its vibrant
+                                        flavors and distinctive cooking method.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/boeuf bourguignon france.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">This classic French dish might look rustic, but plenty of work and skill goes into making it just right. Consisting of beef slowly braised in red wine, plus beef stock, carrots, onions</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/shushi japan.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">Most of us think sushi is all about the quality and freshness of the raw fish – but while that's no doubt important, it’s the rice that’s at the heart of the matter.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/pierogi poland.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">Although variations of pierogi are popular across Russia, Ukraine, Georgia and Belarus, pierogi are synonymous with Polish cuisine. A variety of fillings, both sweet and savoury.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/french onion soup.webp"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">Very few dishes are as comforting as French onion soup – a blend of mellow, slowly cooked, caramelised onions in a broth laced with white wine and cognac.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/shutterstoke.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">Claimed as one of their own throughout North Africa and the Middle East, untangling the web of where shakshuka is from is simply impossible.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/gua bao taiwan.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">The popularity of bao buns has skyrocketed in the Western world in the last decade or so and while these steamed buns are Chinese in origin, it's the Taiwanese version that's proved to be the most popular.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/gaulash hungary.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">Although often cooked as a meat sauce or stew across Europe and beyond, the traditional Hungarian goulash is actually a soup.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/reman japan.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">A Japanese noodle soup, ramen has grown in popularity outside of Japan in the last decade and it's easy to see why.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/kabab turkey.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">The kebab has a long heritage (the name was first recorded as far back as the 14th century) and is thought to have originated in Turkey.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/plov uzbekistan.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">A meaty rice dish, plov comes in more than 60 varieties and forms the heart of Uzbek cuisine. Its essence is long grain rice steamed with saffron, with a layer of eggs, flour, butter and yogurt at the bottom</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/fish uk.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">When you’ve found the perfect cosy pub or enjoyed a long stroll on a blustery British beach, nothing but fish and chips will do.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/bibimbap korea.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">Loaded with warm white rice at the bottom and an arrangement of sliced beef, sautéed and pickled vegetables as well as a variety of sauces and a runny egg on top, bibimbap is a Korean food icon.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/singapor noodles.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">Another misnamed dish, these curried noodles don’t actually come from Singapore. In fact, the stir-fried vermicelli noodles with curry powder, vegetables, scrambled eggs and meat are Cantonese in origin.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="gallery-item">
+                                <img src="/images/jollof rice african.jpg"
+                                    style="height: 250px; width: 100%;" alt="Image 3">
+                                <div class="overlay">
+                                    <div class="text">A West African one-pot dish, jollof rice has its origins hotly contested by Nigeria, Ghana, Senegal and a few other West African countries.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more gallery items as needed -->
+
+                    </div>
+                </div>
+
+                <!-- Add Bootstrap JS from a CDN -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="box">
+                <h3>About us</h3>
+                <p>"Learn Our Story: Who We Are, What We Do, and Why We Do It"</p>
+                <form action="about.html"> <button class="btn btn-primary">Read More</button></form>
+            </div>
+            <div class="box">
+                <h3>Quik Links</h3>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                   
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com">
+                                <img src="./icons/facebook.svg" alt="">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com">
+                                <img src="./icons/twitter.svg" alt="">
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./icons/google.svg" alt="">
+                                <span>Google +</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com">
+                                <img src="./icons/instagram.svg" alt="">
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <footer class="copyright">
+        <div>
+            Copyright © 2023 .All rights reserved by <a href="https://www.instagram.com">Naushad Ali</a>.
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

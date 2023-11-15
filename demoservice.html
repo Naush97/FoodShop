@@ -1,0 +1,229 @@
+<html>
+<head>
+    <title>Our Services</title>
+  
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<style>
+    .service-grid {
+  background: #fcfcfc;
+}
+ .service-title h4 {
+  position: relative;
+  display: inline-block;
+}
+.service-icon {
+  position: relative;
+}
+.service-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+.about-info-text h2 {
+  margin-bottom: 23px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: .9;
+}
+.about-info-text p {
+  padding: 0 100px;
+  font-size: 18px;
+  margin-bottom: 26px;
+    position: relative;
+}
+.about-content p {
+  margin-bottom: 0;
+}
+.about-info-text a {
+  margin-bottom: 20px;
+    position: relative;
+}
+.service-icon i {
+  font-size: 40px;
+  color: #e8bc00;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.service-wrap {
+  border: 1px solid #e6e6e6;
+  padding: 50px 30px;
+    position: relative;
+}
+
+.service-wrap p{
+    position: relative;
+}
+
+.service-wrap:hover {
+  background-image: url(/images/food-table.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
+  transition: all .5s;
+}
+
+.service-wrap:hover:before {
+  background: rgba(0, 0, 0, 0.2901960784313726);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  content: "";
+  top: 0;
+  opacity: 1;
+}
+
+.service-wrap:hover h4,.service-wrap:hover p{
+  color: #fff;
+}
+.service-wrap h4 {
+  font-weight: 600;
+  color: #1e2331;
+  margin-bottom: 17px;
+  font-size: 18px;
+  text-transform: capitalize;
+    position: relative;
+}
+.service-wrap a {
+  font-size: 14px;
+  font-weight: 600;
+    position: relative;
+
+}
+.service-wrap {
+  border: 1px solid #e6e6e6;
+  padding: 50px 30px;
+    position: relative;
+}
+#content {
+    width: 100%;
+    
+    padding: 20px;
+    font-family: Sans-Serif;
+    font-size: 18px;
+    color: #444;
+    margin: 0 auto;
+
+    max-height: 180px;
+    overflow: hidden;
+
+    /* Set Transitions */
+    transition: max-height 0.7s;
+}
+
+#content.open {
+    max-height: 1000px;
+
+    /* Set transitions */
+    transition: max-height 0.7s;
+}
+
+#show-more {
+  width: 100%;
+    background: #1594e5;
+    color: #fff;
+    font-family: sans-serif;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+  margin: 10px auto;
+}
+</style>
+</head>
+<body>
+    <section class="service-grid pb-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center mb-4">
+                    <div class="service-title">
+                        <h4>Our Services</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <img class="icon" src="./icons/dine.webp" alt="">
+
+                        <h3>DINE In</h3>
+                        <p id="content"><b>Experience the Ambiance</b>
+                            Step into our inviting restaurant and immerse yourself in the cozy ambiance we've created just for you. Enjoy a relaxed meal with family and friends.
+                            </p>
+                        <!-- <a id="show-more">Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <img class="icon" src="./icons/delivery.webp" alt="">
+
+                        <h3>Takeout & Delivery</h3>
+                        <p id="content">Convenience at Your Doorstep
+                            Can't make it to our restaurant? No problem! We offer convenient takeout and delivery services. Order your favorite dishes online, and enjoy.</p>
+                        <!-- <a id="show-more">Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <img class="icon" src="./icons/catering.webp" style="height: 100px;width: 100px;" alt="">
+
+                        <h3>Catering</h3>
+                        <p id="content">Events and Special Occasions
+                            Let us elevate your special events and gatherings with our catering services. From weddings to corporate meetings.</p>
+                        <!-- <a id="show-more">Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <img class="icon" src="./icons/Order_Food-512.webp"style="height: 100px;width: 100px;"  alt="">
+
+                        <h3>Online Ordering</h3>
+                        <p id="content">Effortless Ordering
+                            Our website offers a seamless online ordering experience. Browse our menu, customize your order, and pay securely online. </p>
+                        <!-- <a id="show-more">Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <img class="icon" src="./icons/gift card.webp"style="height: 100px;width: 100px;"  alt="">
+
+                        <h3>Gift Cards</h3>
+                        <p id="content">Give the Gift of Great Food
+                            Treat your loved ones to the gift of a delightful dining experience with our gift cards. They're perfect for birthdays, anniversaries, or any occasion.</p>
+                        <!-- <a id="show-more">Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <img class="icon" src="./icons/contact.webp"style="height: 100px;width: 100px;"  alt="">
+
+                        <h3>Contact Us</h3>
+                        <p id="content">If you have any questions or require further information about our services, please don't hesitate to contact us. We're here to assist you and ensure your dining experience with us.</p>
+                        <!-- <a id="show-more">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- <script>
+    var content = document.getElementById("content");
+var button = document.getElementById("show-more");
+
+button.onclick = function () {
+
+if(content.className == "open"){
+    //shrink the box
+    content.className = "";
+    button.innerHTML = "SHOW MORE";
+} else {
+    //expand the box
+    content.className = "open";
+    button.innerHTML = "SHOW LESS";
+}
+
+};
+</script> -->
+</html>

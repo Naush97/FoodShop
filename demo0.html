@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background: orange;
+}
+
+#content {
+    width: 50%;
+    
+    padding: 20px;
+    font-family: Sans-Serif;
+    font-size: 18px;
+    color: #444;
+    margin: 0 auto;
+
+    max-height: 180px;
+    overflow: hidden;
+
+    /* Set Transitions */
+    transition: max-height 0.7s;
+}
+
+#content.open {
+    max-height: 1000px;
+
+    /* Set transitions */
+    transition: max-height 0.7s;
+}
+
+#show-more {
+  width: 20%;
+    background: #1594e5;
+    color: #fff;
+    font-family: sans-serif;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+  margin: 10px auto;
+}
+    </style>
+</head>
+<body>
+    <div id="content">Diwali is one of the most important festivals in Hindu culture. It is one of the most important holidays in the Hindu calendar. Diwali gets its name from the Sanskrit word ‘Deepavali’ that roughly translates to ‘a row of lights.’ It is a great time to have fun with your family and friends. People decorate their houses with oil lamps and fairy lights at night. They cook delicious food and share them with their neighbors. It is a festival of lights; every street is lit up with beautiful lights. It spreads cheer and joy among people and makes them fall in love with their culture. 
+    <br>
+    <br>
+    Festivals have been made to reinforce strong bonds between families and friends, and Diwali is the best example. Everyone goes home for Diwali and celebrates it with their families. It is a national holiday, so everyone enjoys the festival without worrying about work. It gets more exciting at night because lots of sky-lanterns are released into the air that flies high and lights up the night sky. Diwali teaches us to be patient for good things in life.
+    Children keep waiting for many days to enjoy that bite of their favourite sweet. The houses are thoroughly cleaned to clean them of dirt. Cleanliness is very important as it would determine your wellness and health. It has been a part of Hindu culture for a very long time and fosters the moral lesson of “Good people always win over bad ones.</div>
+    <a id="show-more">SHOW MORE</a>
+            
+    </body>
+    <script>
+        var content = document.getElementById("content");
+var button = document.getElementById("show-more");
+
+button.onclick = function () {
+
+    if(content.className == "open"){
+        //shrink the box
+        content.className = "";
+        button.innerHTML = "SHOW MORE";
+    } else {
+        //expand the box
+        content.className = "open";
+        button.innerHTML = "SHOW LESS";
+    }
+
+};
+    </script>
+</html>
